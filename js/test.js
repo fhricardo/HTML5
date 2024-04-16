@@ -1,35 +1,25 @@
-let items = document.getElementsByTagName('code')
-console.log(items.length)
-for (let i = 0; i < items.length; i++) {
-    w3CodeColor(items[i])
-}
-
-let array = ['html5', 'texth1', 'texth2', 'texth3', 'texth4', 'texth5', 'texth6', 'textp']
-for (let i = 0; i < array.length; i++) {
-    console.log(array[i])
-}
 
 // w3CodeColor(document.getElementById("code"));
-//w3CodeColor(document.getElementById('html5'));
+w3CodeColor(document.getElementById('html5'));
 function w3CodeColor(elmnt, mode) {
     var lang = (mode || "html");
     var elmntObj = (document.getElementById(elmnt) || elmnt);
     var elmntTxt = elmntObj.innerHTML;
-    var tagcolor = "grey";
-    var tagnamecolor = "cornflowerblue";
-    var attributecolor = "lightskyblue";
-    var attributevaluecolor = "lightsalmon";
+    var tagcolor = "mediumblue";
+    var tagnamecolor = "brown";
+    var attributecolor = "red";
+    var attributevaluecolor = "mediumblue";
     var commentcolor = "green";
-    var cssselectorcolor = "cornflowerblue";
-    var csspropertycolor = "lightskyblue";
-    var csspropertyvaluecolor = "lightgray";
-    var cssdelimitercolor = "azure";
-    var cssimportantcolor = "lightskyblue";
-    var jscolor = "azure";
-    var jskeywordcolor = "lightgray";
-    var jsstringcolor = "cornflowerblue";
-    var jsnumbercolor = "lightskyblue";
-    var jspropertycolor = "azure";
+    var cssselectorcolor = "brown";
+    var csspropertycolor = "red";
+    var csspropertyvaluecolor = "mediumblue";
+    var cssdelimitercolor = "black";
+    var cssimportantcolor = "red";
+    var jscolor = "black";
+    var jskeywordcolor = "mediumblue";
+    var jsstringcolor = "brown";
+    var jsnumbercolor = "red";
+    var jspropertycolor = "black";
     // elmntObj.style.fontFamily = "Consolas,'Courier New', monospace";
     if (!lang) { lang = "html"; }
     if (lang == "html") { elmntTxt = htmlMode(elmntTxt); }

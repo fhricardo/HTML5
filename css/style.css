@@ -73,7 +73,7 @@ code {
     margin: 0;
     padding: 0;
     font-family: monospace;
-    font-weight: 600;
+    color: azure;
 }
 
 pre {
@@ -81,7 +81,7 @@ pre {
     width: fit-content;
     border: 1px solid #898989;
     border-radius: 8px;
-    background-color: #fafafa;
+    background-color: #1e1e1e;
     padding: 8px;
 }
 
