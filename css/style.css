@@ -79,10 +79,46 @@ code {
 pre {
     font-size: 16px;
     width: fit-content;
-    border: 1px solid #898989;
-    border-radius: 8px;
-    background-color: #1e1e1e;
+    border-radius: 0 0 8px 8px;
+    background-color: #0e0e0e;
     padding: 8px;
+    position: relative;
+}
+
+.code {
+    width: fit-content;
+    position: relative;
+    padding-top: 2px;
+    border-radius: 8px;
+    background-color: #2f2f2f;
+}
+
+.code::before {
+    content: "CODE";
+    position: relative;
+    height: 24px;
+    padding: 4px 12px;
+    line-height: 24px;
+    color: #898989;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: azure;
+}
+
+.code::after {
+    font: var(--fa-font-solid);
+    content: '\f121';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: azure;
+    height: 24px;
+    padding: 2px 12px;
+    font-size: 14px;
+    top: 0;
+    right: 0;
 }
 
 a:link,
